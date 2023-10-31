@@ -1,0 +1,19 @@
+.priceButton {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.price {
+  margin-top: 2%;
+}
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10%;
+  margin-top: 0;
+}
+.items {
+  padding: 20px;
+  margin: 30px;
+}
