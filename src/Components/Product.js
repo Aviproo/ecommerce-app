@@ -41,10 +41,18 @@ const Product = () => {
   ];
 
   return (
-    <div className={classes.item}>
-      {productsArr.map((item) => (
-        <Item title={item.title} price={item.price} imageUrl={item.imageUrl} />
-      ))}
+    <div>
+      <div className={classes.music}> Music</div>
+
+      <div className={classes.item}>
+        {productsArr.map((item) => (
+          <Item
+            title={item.title}
+            price={item.price}
+            imageUrl={item.imageUrl}
+          />
+        ))}
+      </div>
     </div>
   );
 };

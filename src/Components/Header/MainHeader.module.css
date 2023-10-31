@@ -1,0 +1,22 @@
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+.header {
+  display: inline-flex;
+  justify-content: center;
+  width: 90%;
+  font-family: "Metal Mania";
+}
+.components {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.generics {
+  background-color: gray;
+  color: white;
+  font-size: 100px;
+  font-family: "Metal Mania";
+}
