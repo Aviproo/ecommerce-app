@@ -4,6 +4,7 @@ import classes from "./Item.module.css";
 const Product = () => {
   const productsArr = [
     {
+      id: 1,
       title: "Colors",
 
       price: 100,
@@ -13,7 +14,8 @@ const Product = () => {
     },
 
     {
-      title: "Black and white Colors",
+      id: 2,
+      title: "Black",
 
       price: 50,
 
@@ -22,7 +24,8 @@ const Product = () => {
     },
 
     {
-      title: "Yellow and Black Colors",
+      id: 3,
+      title: "Yellow",
 
       price: 70,
 
@@ -31,7 +34,8 @@ const Product = () => {
     },
 
     {
-      title: "Blue Color",
+      id: 4,
+      title: "Blue",
 
       price: 100,
 
@@ -43,10 +47,10 @@ const Product = () => {
   return (
     <div>
       <div className={classes.music}> Music</div>
-
       <div className={classes.item}>
         {productsArr.map((item) => (
           <Item
+            id={item.id}
             title={item.title}
             price={item.price}
             imageUrl={item.imageUrl}

@@ -1,10 +1,13 @@
 .cartItem {
-  position: absolute;
+  position: fixed;
   right: 0;
+  top: 35px;
   background: white;
-  top: 42px;
   z-index: 1;
   border: 1px solid black;
+  width: 461px;
+  height: 565px;
+  scroll-behavior: auto;
 }
 .image {
   width: 100px;

@@ -4,8 +4,14 @@ import Home from "./Home";
 import Store from "./Store";
 import classes from "./MainHeader.module.css";
 import Generics from "./Generics";
+import { useState } from "react";
+import CartItem from "../Cart/CartItems";
 
 const MainHeader = () => {
+  const [ShowCartItem, setShowCartItem] = useState();
+  const showCartHandeler = () => {
+    setShowCartItem(!ShowCartItem);
+  };
   return (
     <>
       <div className={classes.mainHeader}>
@@ -14,9 +20,9 @@ const MainHeader = () => {
           <Store />
           <About />
         </div>
-
-        <Cart />
+        <Cart click={showCartHandeler} />
       </div>
+      {ShowCartItem && <CartItem />}
       <Generics />
     </>
   );
