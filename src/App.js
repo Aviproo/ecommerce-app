@@ -1,4 +1,5 @@
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 
 import MainHeader from "./Components/Header/MainHeader";
 import Product from "./Components/Product";
@@ -8,8 +9,10 @@ function App() {
   return (
     <ContextProvider>
       <div className="App">
-        <MainHeader />
-        <Product />
+        <BrowserRouter>
+          <MainHeader />
+          <Product />
+        </BrowserRouter>
       </div>
     </ContextProvider>
   );

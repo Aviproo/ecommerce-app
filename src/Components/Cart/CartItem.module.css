@@ -41,3 +41,11 @@
   height: 50px;
   margin-top: 18px;
 }
+.closeBtn {
+  position: absolute;
+  right: 20px;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  border: 0;
+}
